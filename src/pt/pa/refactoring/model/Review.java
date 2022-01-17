@@ -55,7 +55,7 @@ public class Review {
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(String.format("Date: %d/%d/%d @ %d:%d ", this.day, this.month, this.minute, this.hour, this.minute))
+        sb.append(String.format("Date: %d/%d/%d @ %d:%d ", this.day, this.month, this.year, this.hour, this.minute))
                 .append(String.format("Reviewer: %s ", this.getReviewer()))
                 .append(String.format("Rating: %.1f ", this.getRating()))
                 .append(String.format("Comment: %s", this.getText()));
